@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce Yourself</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #198561;
+        }
+        .container {
+            position: relative;
+            max-width: 500px;
+            margin: 13px  auto auto auto;
+            background-color: #ffffff00;
+        }
+        .image {
+            width: 140%;
+            display: block;
+            position: relative;
+            z-index: 1;
+            
+        }
+        .text {
+            position: absolute;
+            top: 80%;
+            left: 5%;
+            width: auto;
+            transform: translate(-50%, -50%);
+            text-align: right;
+            z-index: 2;
+           
+        }
+        .overlap-image1 {
+            position: absolute;
+            width: 150%;
+            top: 0%; /* Adjust as needed */
+            left: -60%; /* Adjust as needed */
+            /* You can also use z-index to control the stacking order */
+            z-index: 0;
+        }
+        .overlap-image2 {
+            position: absolute;
+            width: 120%;
+            top: 20%; /* Adjust as needed */
+            left: 60%; /* Adjust as needed */
+            /* You can also use z-index to control the stacking order */
+            z-index: 0;
+        }
+        p {
+            line-height: 1.6;
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: auto;
+        }
+        p2 {
+            line-height: 1.6;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="images/self.png" alt="Your Image">
+        <img class="overlap-image1" src="images/MNC.png" alt="Overlay Image1">
+        <img class="overlap-image2" src="images/Neon Donut.png" alt="Overlay Image2">
+        <div class="text">
+            <p>Get To Know JORJIA</p>
+            <p2>The Future Artist</p2>
+        </div>
+    </div>
+</body>
+</html>
